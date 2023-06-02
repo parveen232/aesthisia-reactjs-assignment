@@ -1,11 +1,13 @@
-import petalsIcon from "./assets/icons/petals-icon.png";
-import eyeIcon from "./assets/icons/eye-icon.png";
+import petalsIcon from "../assets/icons/petals-icon.png";
+import eyeIcon from "../assets/icons/eye-icon.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function LoginCard() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   function handleSubmit(e: any) {
     e.preventDefault();
@@ -21,16 +23,17 @@ export default function Login() {
       emailErr!.innerText = ``;
       passwordErr!.innerText = `Enter your password`;
     } else if (
-      email.trim() == `login@gmail.com` &&
-      password.trim() == `login`
+      email.trim() == `exo@email.com` &&
+      password.trim() == `exologin`
     ) {
       emailErr!.innerText = ``;
       passwordErr!.innerText = ``;
-      alert("logged in");
+      navigate("/");
+      // alert("logged in");
     } else {
       emailErr!.innerText = ``;
       passwordErr!.innerText = ``;
-      alert("invalid email and password");
+      alert("Incorrect email and password, Enter again!!");
       // alert("data you have entered is sent to the server for processing")
     }
   }

@@ -1,10 +1,10 @@
-import ExoLogo from "./assets/logo/exo-logo.png";
-import InternetIcon from "./assets/icons/internet-icon.png";
-import LinkedinIcon from "./assets/icons/linkedin-icon.png";
-import igIcon from "./assets/icons/ig-icon.png";
-import fbIcon from "./assets/icons/fb-icon.png";
+import ExoLogo from "../assets/logo/exo-logo.png";
+import InternetIcon from "../assets/icons/internet-icon.png";
+import LinkedinIcon from "../assets/icons/linkedin-icon.png";
+import igIcon from "../assets/icons/ig-icon.png";
+import fbIcon from "../assets/icons/fb-icon.png";
 
-export default function Card() {
+export default function ExoCard() {
   return (
     <div className="flex h-full w-full flex-col justify-between rounded-2xl bg-info-img bg-cover  bg-top p-7 font-poppins">
       <div>
