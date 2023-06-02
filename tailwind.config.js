@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'info-img': "url('/src/assets/img/background.png')",
+        'eye-img': "url('/src/assets/icons/eye-icon.png')",
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+      },
+    }
   },
   plugins: [],
 }
