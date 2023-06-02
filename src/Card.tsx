@@ -6,7 +6,7 @@ import fbIcon from "./assets/icons/fb-icon.png";
 
 export default function Card() {
   return (
-    <div className="flex h-full w-full flex-col justify-between rounded-2xl  bg-red-500 bg-info-img bg-cover  bg-top p-7 font-poppins">
+    <div className="flex h-full w-full flex-col justify-between rounded-2xl bg-info-img bg-cover  bg-top p-7 font-poppins">
       <div>
         <img src={ExoLogo} alt="exo-logo" />
       </div>

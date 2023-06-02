@@ -4,7 +4,7 @@ import Login from "./Login";
 function App() {
   return (
     <main>
-      <div className="flex h-screen w-full flex-col p-10 md:flex-row">
+      <div className="flex h-screen w-full flex-col p-3 md:flex-row md:p-10">
         <div className="md:w-2/4">
           <Card />
         </div>
