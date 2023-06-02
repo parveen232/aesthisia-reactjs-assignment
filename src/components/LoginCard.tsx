@@ -17,6 +17,9 @@ export default function LoginCard() {
     if (email.trim() == `` && password.trim() == ``) {
       emailErr!.innerText = `Enter your email`;
       passwordErr!.innerText = `Enter your password`;
+    } else if (email.trim() == `` && password.trim() != ``) {
+      emailErr!.innerText = `Enter your email`;
+      passwordErr!.innerText = ``;
     } else if (email.trim() == ``) {
       emailErr!.innerText = `Enter your email`;
     } else if (password.trim() == ``) {
@@ -33,7 +36,7 @@ export default function LoginCard() {
     } else {
       emailErr!.innerText = ``;
       passwordErr!.innerText = ``;
-      alert("Incorrect email and password, Enter again!!");
+      alert("Incorrect email and password, Try again!!");
       // alert("data you have entered is sent to the server for processing")
     }
   }
@@ -66,7 +69,7 @@ export default function LoginCard() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
-          className="w-full rounded-lg border-2 border-solid border-slate-300 px-6 py-4 text-lg tracking-wide text-slate-800 outline-none invalid:text-red-500"
+          className="w-full rounded-lg border-2 border-solid border-slate-300 px-6 py-4 text-lg tracking-wide text-slate-800 outline-none"
         />
         <div id="emailerr" className="px-3 py-1 text-sm text-red-500"></div>
         <div className="mb-10 mt-10 flex flex-col items-end">
