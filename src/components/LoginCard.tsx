@@ -36,7 +36,7 @@ export default function LoginCard() {
     } else {
       emailErr!.innerText = ``;
       passwordErr!.innerText = ``;
-      alert("Incorrect email and password, Try again!!");
+      alert("Incorrect email or password, Try again!!");
       // alert("data you have entered is sent to the server for processing")
     }
   }
